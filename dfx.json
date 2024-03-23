@@ -1,0 +1,29 @@
+{
+  "canisters": {
+    "history_dao_backend": {
+      "declarations": {
+        "node_compatibility": true
+      },
+      "main": "src/history_dao_backend/main.mo",
+      "type": "motoko"
+    },
+    "history_dao_frontend": {
+      "dependencies": [
+        "history_dao_backend"
+      ],
+      "source": [
+        "src/history_dao_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "history_dao_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
